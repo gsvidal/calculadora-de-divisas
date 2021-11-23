@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversor de divisas</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+       .overlay{
+           height: 100vh;
+           position: relative;
+
+       }
+        .container{
+           width:  60%;
+           height: 400px;
+           border: 1px solid black;
+           margin: 200px auto;
+           background-color: grey;
+           border-radius: 20px;
+           
+        }
+        .sub-container{
+            display: block;
+            height: 360px;
+            width: 700px;
+            border: 1px solid black;
+            margin: 20px auto;
+        }
+        .input{
+            margin-top: 10px;
+            text-align: center;
+        }
+        .img-money{
+            margin: 0px auto;
+            height: 200px;
+            width: 500px;
+            
+            border-radius: 10px;
+        }
+        .sub-container img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .selects{
+            width: 200px;
+            height: 50px;
+            border: 1px black solid;
+            margin-top: 20px;
+            margin-left: 110px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sub-container">
+            <div class="img-money">
+                <img src="https://www.uac.edu.co/images/Invertir_dinero_FreePik.jpg"  alt="dinero">
+            </div>
+            <div class="input">
+                <label for="howmuch">$$</label>
+                <input type="num" id="howmuch" placeholder="cuanto dinero?">
+            </div>
+            <div class="selects">
+                <select  id="divisa-1" >
+                </select>
+                <select id="divisa-2">
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
